@@ -51,7 +51,7 @@ class Tx_JhPwcommentsCaptcha_Validation_Validator_CaptchaValidator extends Tx_Ex
 		try{
 			if($value !== $captcha->getTextInSession()){
 				//$this->addError('Entered word does not match the image.', 170320111501);
-				$this->addError(\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('validation_error.captcha', 'pw_comment'), 170320111501);
+				$this->addError(\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('validation_error.captcha', 'PwComment'), 170320111501);
 
 				return FALSE;
 			}
