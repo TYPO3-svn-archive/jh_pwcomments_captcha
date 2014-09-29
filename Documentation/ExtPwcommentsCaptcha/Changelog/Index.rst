@@ -28,6 +28,11 @@ ChangeLog
    :Changes:
          Changes:
 
+ - :Version:
+         0.0.2
+
+   :Changes:
+         \* Fixed Bug #61270
 
  - :Version:
          0.0.1
