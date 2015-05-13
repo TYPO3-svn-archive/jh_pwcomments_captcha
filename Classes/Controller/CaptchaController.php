@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2014 Jonathan Heilmann <mail@jonathan-heilmann.de>
+*  (c) 2014-2015 Jonathan Heilmann <mail@jonathan-heilmann.de>
 *
 *  All rights reserved
 *
@@ -47,7 +47,7 @@ class Tx_JhPwcommentsCaptcha_Controller_CaptchaController extends Tx_PwComments_
 				$validator = $argument->getValidator();
 
 				// If activated and available add the modified sr_freecap validator
-				if($this->settings['captcha'] == 'sr_freecap' && \TYPO3\CMS\Extensionmanager\Utility\InstallUtility::isLoaded('sr_freecap')) {
+				if($this->settings['captcha'] == 'sr_freecap' && \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('sr_freecap')) {
 					$captchaValidator = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('Tx_JhPwcommentsCaptcha_Validation_Validator_SrFreecapValidator');
 					$captchaValidator->setOptions(
 						array(
@@ -58,7 +58,7 @@ class Tx_JhPwcommentsCaptcha_Controller_CaptchaController extends Tx_PwComments_
 				}
 
 				// If activated and available add the modified captcha_viewhelper validator
-				if($this->settings['captcha'] == 'captcha' && \TYPO3\CMS\Extensionmanager\Utility\InstallUtility::isLoaded('captcha_viewhelper')) {
+				if($this->settings['captcha'] == 'captcha' && \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('captcha_viewhelper')) {
 					$captchaValidator = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('Tx_JhPwcommentsCaptcha_Validation_Validator_CaptchaValidator');
 					$captchaValidator->setOptions(
 						array(
