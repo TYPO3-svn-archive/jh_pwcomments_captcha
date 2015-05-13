@@ -21,7 +21,7 @@ EXT: pwComments captcha
       2010-02-18 17:03:03
 
 :Changed:
-      2014-04-07 15:01:04
+      2015-05-12 20:53:04
 
 :Classification:
       jh_pwcomments_captcha

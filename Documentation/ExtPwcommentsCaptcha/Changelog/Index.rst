@@ -29,6 +29,12 @@ ChangeLog
          Changes:
 
  - :Version:
+         0.0.3
+
+   :Changes:
+         \* Fixed Bug #66910
+
+ - :Version:
          0.0.2
 
    :Changes:
